@@ -135,6 +135,72 @@ img{
      color: var(--color-asosiy);
      font-size: 32px;
 }
+.precing-switch{
+     margin-bottom: 50px;
+}
+.switch{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.switch-control{
+     margin-left: 24px;
+     margin-right: 24px;
+     position: relative;
+     width: 56px;
+     height: 32px;
+     border-radius: 16px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     padding: 4px;
+     background-color: #696edd;
+     background-image: linear-gradient(135deg, #a2a7f0 0%, #696edd 100% );
+}
+.switch-sircle{
+     width: 24px;
+     height: 24px;
+     border-radius: 50%;
+     background-color: #fff;
+}
+.switch-control-anually,
+.switch-control-monthly{
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+}
+.switch-input-anually:checked ~ .switch-control .switch-control-monthly,
+.switch-input-monthly:checked ~ .switch-control .switch-control-anually{
+     z-index: 5;
+}
+.switch-input-monthly:checked ~ .switch-control .switch-sircle{
+     margin-left: 24px;
+}
+/* .switch-control-anually{
+     right: 100%;
+}
+.switch-control-monthly{
+     left: 100%;
+}
+.switch-input-anually:checked ~ .switch-control .switch-control-monthly{
+     transform: translateY(-10px);
+}
+.switch-input-monthly:checked ~ .switch-control .switch-control-anually{
+     transform: translateY(-10px);
+} */
+.switch-label{
+     font-size: 15px;
+     line-height: 28px;
+     font-family: var(--font-family);
+     font-weight: var(--font-weight);
+     color: rgb(110, 114, 142, 0.5);
+     cursor: pointer;
+     transition: color 0.4s ease;
+}
+.switch-label:hover{
+     color: #6E728E;
+}
 .pricing{
      width: 100%;
 }
